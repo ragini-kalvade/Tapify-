@@ -8,7 +8,7 @@ The repository is organized as follows:
 
 ```
 .
-├── prototype/
+├── prototype/          # Source code for low fidelity and functional prototype
 ├── user_studies/       # User study findings and data
 ├── presentations/      # Files for the final presentation
 └── LICENSE             # Project license file
