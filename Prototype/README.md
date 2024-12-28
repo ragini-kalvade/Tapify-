@@ -6,4 +6,4 @@
 ### 7. Functional Prototype
 - Implement a minimum viable product using HTML5, CSS, JavaScript, and other technologies as needed.
 - Utilize insights from previous user studies.
-- Github Repository : [Code Link]()
+- Github Repository : [Project Code](https://github.com/ragini-kalvade/Tapify-Code)
