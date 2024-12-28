@@ -37,3 +37,4 @@ Select your emulator or connected physical device to install and run Tapify.
 5. **Add MP3 Files**
 Download sample MP3 files from the link below and open device manager in emulator. Upload mp3 files to device:
 https://drive.google.com/file/d/1pEQims1n9a7qJH27_4M6NnJT_KcMsgw8/view?usp=sharing
+

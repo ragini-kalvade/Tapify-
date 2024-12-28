@@ -1,0 +1,195 @@
+:root {
+    --primary-dark: #2a003d;
+    --primary-light: #8f06ee;
+    --primary-accent: #530d81;
+    --secondary-light: #f3e8ff;
+    --secondary-white: #ffffff;
+    --secondary-gray: #cccccc;
+
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+button {
+    background-color: var(--primary-light);
+    color: var(--secondary-white);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+button:hover {
+    background-color: var(--primary-accent);
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: var(--primary-accent);
+    transform: translateY(0);
+}
+
+
+
+.buttonList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+.plusImg {
+    width: 20px;
+    height: 20px;
+}
+
+.invisibleButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.invisibleButton img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.invisibleButton img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(143, 6, 238, 0.5);
+}
+
+/**************************************/
+/* Metadata overlay CSS:*/
+/**************************************/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 0, 61, 0.85); /* Transparent dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.okButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* New Improvements for lists.css */
+.listItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(143, 6, 238, 0.5);
+}
+
+.invisibleButton img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(143, 6, 238, 0.5);
+}
+
+.navButton:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: var(--hover-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    top: -30px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    gap: 10px;
+}
+
+.image {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image.loading {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.2s, opacity 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.icon:focus {
+    outline: 2px solid var(--hover-color);
+    transform: scale(1.1);
+}
+
+
+.fullTitle {
+    flex-grow: 1;
+    margin: 0 10px;
+    font-size: 16px;
+    color: var(--text-primary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Placeholder styling */
+.image[alt="default-placeholder"] {
+    background: linear-gradient(145deg, #2a003d, #530d81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--text-secondary);
+}

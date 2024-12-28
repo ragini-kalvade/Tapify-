@@ -1,0 +1,191 @@
+:root {
+    --primary-dark: #2a003d;
+    --primary-light: #8f06ee;
+    --primary-accent: #530d81;
+    --secondary-light: #f3e8ff;
+    --secondary-white: #ffffff;
+    --secondary-gray: #cccccc;
+
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    padding: 5px;
+}
+
+.homeButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-light);
+    color: var(--secondary-white);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.homeButton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--primary-accent);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+    transition: transform var(--transition-speed), filter var(--transition-speed);
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.search-div {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    padding: 0 50px 0 20px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.search-box:focus {
+    outline: none;
+    border: 2px solid #8f06ee;
+    box-shadow: 0 0 12px rgba(143, 6, 238, 0.5);
+}
+
+.search-icon {
+    position: absolute;
+    right: 23px;
+    width: 18px;
+    height: 18px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 0, 61, 0.8); /* Dimmed background with purple hue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.metadata-editor {
+    background: #2a003d;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+}
+
+.metadata-title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #f3e8ff; /* Light purple */
+}
+
+.field-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #f3e8ff; /* Light purple */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #8f06ee; /* Bright purple border */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #530d81; /* Dark purple */
+    box-shadow: 0 0 5px rgba(143, 6, 238, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.okButton,
+.cancelButton {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.okButton {
+    background: #8f06ee; /* Bright purple */
+    color: #ffffff;
+}
+
+.okButton:hover {
+    background: #530d81; /* Dark purple */
+    transform: translateY(-2px);
+}
+
+.cancelButton {
+    background: #cccccc; /* Gray */
+    color: #000000;
+}
+
+.cancelButton:hover {
+    background: #999999;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,233 @@
+:root {
+    --primary-dark: #2a003d;
+    --primary-light: #8f06ee;
+    --primary-accent: #530d81;
+    --secondary-light: #f3e8ff;
+    --secondary-white: #ffffff;
+    --secondary-gray: #cccccc;
+
+    --font-family: 'Poppins', sans-serif;
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--secondary-white);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button,
+input {
+    font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-light);
+}
+
+#pageTitle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    background: #390452;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.topBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    background: linear-gradient(90deg, #2a003d, #1e1e1e);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    height: 60px;
+}
+/* ---------------------------- */
+
+#pageTitle:hover {
+    color: #e0e0e0;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 10px;
+    margin: 0px auto 70px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* ---------------------------- */
+
+.invisibleButton {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100%;
+    border: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: none;
+}
+
+.navImage {
+    margin-left: 5px;
+    height: 50%;
+}
+
+.bottomBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212; /* Dark background for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+/* Song Info Bar */
+.songInfoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+/* Song Preview Image */
+.songPreview {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Progress Bar Background */
+.progressBarBG {
+    flex-grow: 1;
+    margin: 0 10px;
+    height: 5px;
+    background-color: #444;
+    border-radius: 2.5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #1DB954; /* Spotify green for aesthetic */
+    width: 30%; /* Dynamic width based on playback */
+    transition: width 0.2s ease-in-out;
+}
+
+/* Song Details */
+.songDetails {
+    display: flex;
+    flex-direction: column;
+    min-width: 120px;
+}
+
+.songTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.songArtist {
+    font-size: 12px;
+    color: #bbb;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Control Icon */
+.songBarImg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #1c1c1c;
+    padding: 5px 0;
+}
+
+.navButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #aaa;
+    font-size: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navButton:hover {
+    color: #fff;
+}
+
+.navImage {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .songTitle,
+    .songArtist {
+        font-size: 12px;
+    }
+
+    .songPreview {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navImage {
+        width: 20px;
+        height: 20px;
+    }
+}
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/PageDefault.css">
+    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/lists.css">
+</head>
+
+<body>
+
+<header class="topBar">
+    <h1 id="pageTitle">Home</h1>
+</header>
+
+<main id="container"></main>
+
+</body>
+
+<footer class="bottomBar">
+    <div class="songInfoBar">
+        <img src="images/defaultCover.png" class="songPreview" alt="Now Playing" style=opacity=1>
+        <div class="progressBarBG">
+            <div class="progressBar"></div>
+        </div>
+
+        <div class="songDetails">
+            <div class="songTitle">Song Title</div>
+            <div class="songArtist">Artist Name</div>
+        </div>
+
+        <img class="songBarImg" src="images/play.png" alt="play">
+
+    </div>
+
+    <nav class="navBar">
+        <button class="navButton" onclick="showIndexPage()">
+            <img class="navImage" src="images/home.png" alt="Home Icon">
+            <span>Home</span>
+        </button>
+        <button class="navButton" id="navSearchButton">
+            <img class="navImage" src="images/icon.png" alt="Search Icon">
+            <span>Search</span>
+        </button>
+    </nav>
+</footer>
+
+<!--TODO: get rid of this long list with module imports? -->
+<script src="js/Utils.js"></script>
+<script src="js/index.js"></script>
+<script src="js/search.js"></script>
+<script src="js/artists.js"></script>
+<script src="js/playlists.js"></script>
+<script src="js/albums.js"></script>
+<script src="js/genres.js"></script>
+<script src="js/mostRecent.js"></script>
+<script src="js/mostPlayed.js"></script>
+<script src="js/albumsByArtist.js"></script>
+<script src="js/singleAlbum.js"></script>
+<script src="js/singleGenre.js"></script>
+<script src="js/singlePlaylist.js"></script>
+
+
+</html>
