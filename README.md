@@ -1,4 +1,4 @@
-# UI Design Concepts - Semester Team Project
+# UI Design Concepts - Semester Project
 
 This repository contains all the deliverables for the **UI Design Concepts** course. The project follows an iterative design and development process, exploring principles of User Experience (UX) and Human-Computer Interaction (HCI).
 
