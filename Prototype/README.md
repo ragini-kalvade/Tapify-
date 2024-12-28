@@ -6,4 +6,4 @@
 ### Functional Prototype
 - Implement a minimum viable product using HTML5, CSS, JavaScript, and other technologies as needed.
 - Utilize insights from previous user studies.
-- Github Repository : [Project Code](https://github.com/ragini-kalvade/UI-Design-Concepts/tree/main/Prototype/Project Code)
+- Github Repository : [Project Code](https://github.com/ragini-kalvade/UI-Design-Concepts/tree/8130543405a9188acb6e2d96fbbb3120d2666358/Prototype/Project%20Code)
