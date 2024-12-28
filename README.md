@@ -30,15 +30,18 @@ The repository is organized as follows:
 
 ## Overview
 
-### 1. Concept Brainstorm
+### 1. Experience Breakdown
+- Fundamental principles of user interface design and articulating them to critique real world examples.
+
+### 2. Concept Brainstorm
 - Generate innovative, creative, and practical ideas for the project.
 - Conduct research on supporting technologies.
 
-### 2. Semester Project Proposal
+### 3. Semester Project Proposal
 - Select the most feasible and exciting project concept.
 - Create a project plan considering the timeline and team skillset.
 
-### 3. Project Research Paper
+### 4. Project Research Paper
 - A detailed report on the iterative design and development process to showcase data-driven design decisions and outcomes.
 
 ## Technologies Used
